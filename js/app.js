@@ -153,5 +153,11 @@ function agregarPlatillo(producto){
         cliente.pedido = [...resultado];
         
     }
-    console.log(cliente.pedido);
+    
+    // Mostrar el resumen
+    actualizarResumen();
+}
+
+function actualizarResumen(){
+    console.log('Desde actualizar resumen');
 }
