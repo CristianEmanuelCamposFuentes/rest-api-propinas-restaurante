@@ -315,7 +315,10 @@ function eliminarProducto(id){
     }
 
     // El producto se elimino por lo tanto se regresa el input a 0
-    
+    // const productoEliminado = `#producto-${id}`;
+    // const inputEliminado = document.querySelector(productoEliminado);
+    const inputEliminado = document.querySelector(`#producto-${id}`);
+    inputEliminado.value = 0;
 }
 
 function mensajePedidoVacio(){
